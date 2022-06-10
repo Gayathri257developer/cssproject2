@@ -1,12 +1,85 @@
 body{
     background-color: ghostwhite;
 }
- .container1{
+section{
+    margin: 50px 300px;
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    border: 1px solid rgb(127, 112, 112);
+}
+#heading-res{
+    display: none;
+}
+.heading{
+
+ text-align: center;
+ margin: 20px 30px 0px 10px;
+}
+span{
+font-size: 30px;
+font-weight: bold;
+}
+h6{
+font-size: 25px;
+margin-top: 20px;
+}
+h6 b a{
+text-decoration: none;
+background-color: rgb(241, 9, 9);
+color: white;
+border-radius: 80%;
+padding: 4px 2px;
+font-size: 20px;
+}
+.trip-paris{
+border-radius: 10px;
+box-shadow: 2px 5px 3px 4px rgb(207, 206, 206);
+border: 1px solid red;
+margin: 20px;
+padding: 25px 15px 10px;
+width: 30%;
+height: 250px; 
+}
+.trip-paris a{
+color: red;
+font-family: Arial Narrow, sans-serif;
+text-decoration: none;
+font-size: 20px;
+margin-left: 15px;
+}
+.trip-paris hr{
+width: 70%;
+float: right;
+right: 0px;
+}
+.trip-paris del{
+color: red;
+margin-left: 12px;
+font-size: 20px; 
+}
+#button{
+text-decoration: none;
+background-color: rgb(241, 9, 9);
+color: white;
+border-radius: 80%;
+padding: 4px 5px;
+font-size: 20px; 
+right: 45%;
+bottom: 150px;
+position: absolute;
+}
+
+@media only screen and (max-width:900px) and (min-width:768px){
+ section{
      background-color: white;
      border: 1px solid grey;
-     margin: 150px 350px 0px 580px;
-     width: 20%;
-     height: 450px;
+     margin: 100px 35px 0px 60px;
+     width: 70%;
+     height: 500px;
+ }
+ #heading-res{
+     display: none;
  }
  h3{
      font-size: 30px;
@@ -32,7 +105,7 @@ border: 1px solid red;
 margin: 20px;
 padding: 25px 15px 10px;
 width: 55%;
-height: 250px; 
+height: 220px; 
 }
 .trip-paris a{
 color: red;
@@ -58,23 +131,39 @@ color: white;
 border-radius: 80%;
 padding: 4px 6px;
 font-size: 25px; 
-right: 51%;
-bottom: 30%;
+right: 42%;
+bottom: 40%;
 position: absolute;
 }
-
+}
 @media screen and (min-width: 375px) and (max-width: 667px){
-    .container1{
+    section{
         background-color: white;
         border: 1px solid grey;
-        margin: 80px 50px 10px 50px;
-        width: 70%;
+        margin: 50px 50px 10px 10px;
+        width: 75%;
         height: 450px;
     }
+    .heading {
+        display: none;
+    }
     h3{
-        font-size: 28px;
-        margin: 20px 10px 0px 15px;
-    } 
+        font-size: 30px;
+        margin: 30px 10px 0px 10px;
+    }
+   span button{
+        font-weight: 100;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px 3px;
+        margin: 32px 0px 0px 40px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    #heading-res{
+        display: inline-flex;   
+    }
     span button{
         font-weight: 100;
         border: none;
@@ -116,12 +205,13 @@ position: absolute;
                 background-color: rgb(241, 9, 9);
                 color: white;
                 border-radius: 80%;
-                padding: 2px 3px;
-                font-size: 15px; 
+                padding: 8px 12px;
+                font-size: 20px; 
                 left: 30%;
-                top: 30%;
+                top: 20%;
                 /* top: 10vw; */
                 cursor: pointer;
                 position: relative;
             }
+         
 }

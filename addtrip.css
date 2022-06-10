@@ -1,39 +1,44 @@
-body{
-    background-color: ghostwhite;
+section{
+    filter: blur(5px);
+    margin: 70px 300px;
+    display: inline-block;
+    width: 50%;
+    height: 450px;
+    border: 1px solid rgb(127, 112, 112);
 }
- .container1{
-     filter: blur(7px);
-     background-color: white;
-     border: 1px solid grey;
-     margin: 150px 350px 0px 580px;
-     width: 20%;
-     height: 450px;
- }
- h3{
-     font-size: 30px;
-     margin: 30px 10px 0px 10px;
- }
-span button{
-     font-weight: 100;
-     border: none;
-     font-size: 20px;
-     color: white;
-     padding: 5px 3px;
-     margin: 32px 0px 36px 40px;
-     border-radius: 50%;
-     background-color: red;
- }
- #heading{
-     display: inline-flex;   
- }
+#heading-res{
+    display: none;
+}
+.heading{
+ text-align: center;
+ margin: 30px 30px 0px 10px;
+}
+span{
+font-size: 30px;
+font-weight: bold;
+}
+h6{
+/* float: right; */
+font-size: 25px;
+/* margin-left: 280px; */
+margin-top: 25px;
+}
+h6 b a{
+text-decoration: none;
+background-color: rgb(241, 9, 9);
+color: white;
+border-radius: 80%;
+padding: 4px 2px;
+font-size: 20px;
+}
 .trip-paris{
 border-radius: 10px;
 box-shadow: 2px 5px 3px 4px rgb(207, 206, 206);
 border: 1px solid red;
 margin: 20px;
 padding: 25px 15px 10px;
-width: 55%;
-height: 250px; 
+width: 30%;
+height: 200px; 
 }
 .trip-paris a{
 color: red;
@@ -57,53 +62,70 @@ text-decoration: none;
 background-color: rgb(241, 9, 9);
 color: white;
 border-radius: 80%;
-padding: 4px 6px;
-font-size: 25px; 
-right: 51%;
-bottom: 30%;
+padding: 4px 5px;
+font-size: 20px; 
+right: 40%;
+bottom: 100px;
 position: absolute;
 }
+
 #block{
-    width: 20%;
-    height: 180px;
-    z-index: 1;
-    bottom: 25%;
-    margin: 30px;
-    filter: blur(0px);
-    position: absolute;
-    border: 0.5px solid red;
-    right: 40%;
-    display: inline-block;
-    background-color: white;
-    }
-    #block p{
-    font-size: 20px;
-    color: red;
-    }
-    #block input[type=text]{
-    padding: 5px;
-    border: 0.5px solid rgb(236, 17, 17) ;
-    }
-    #block button{
-    border: 1px solid rgb(225, 77, 14);
-    color: white;
-    padding: 5px 17px;
-    border-radius: 15px;
-    background-color: rgb(225, 77, 14);
-    }
+     width: 25%;
+     height: 180px;
+     z-index: 1;
+     bottom: 25%;
+     margin: 30px;
+     filter: blur(0px);
+     position: absolute;
+     border: 0.5px solid red;
+     right: 35%;
+     display: inline-block;
+     background-color: white;
+ }
+ #block p{
+     font-size: 20px;
+     color: red;
+ }
+ #block input[type=text]{
+     padding: 5px;
+     border: 0.5px solid rgb(236, 17, 17) ;
+ }
+ #block button{
+     border: 1px solid rgb(200, 66, 8);
+     color: white;
+     padding: 5px 17px;
+     border-radius: 15px;
+     background-color: rgb(225, 77, 14);
+ }
 
 @media screen and (min-width: 375px) and (max-width: 667px){
-    .container1{
+    section{
         background-color: white;
         border: 1px solid grey;
-        margin: 80px 50px 10px 50px;
-        width: 70%;
+        margin: 50px 0px 10px 20px;
+        width: 75%;
         height: 450px;
     }
+    .heading {
+        display: none;
+    }
     h3{
-        font-size: 28px;
-        margin: 20px 10px 0px 15px;
-    } 
+        font-size: 30px;
+        margin: 30px 10px 0px 10px;
+    }
+   span button{
+        font-weight: 100;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px 3px;
+        margin: 32px 0px 0px 40px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    #heading-res{
+        display: inline-flex;   
+    }
     span button{
         font-weight: 100;
         border: none;
@@ -145,18 +167,101 @@ position: absolute;
                 background-color: rgb(241, 9, 9);
                 color: white;
                 border-radius: 80%;
-                padding: 2px 3px;
-                font-size: 15px; 
+                padding: 8px 12px;
+                font-size: 20px; 
                 left: 30%;
-                top: 30%;
+                top: 20%;
                 /* top: 10vw; */
                 cursor: pointer;
                 position: relative;
             }
             #block{
-                /* position: relative; */
-                width: 60%;
-                left: 5vw;
-                top: 40vw;
-            }
+                width: 40%;
+                height: 180px;
+                z-index: 1;
+                top: 30%;
+                margin: 30px;
+                position: absolute;
+                border: 0.5px solid red;
+                right: 25%;
+                display: inline-block;
+                background-color: white;
+                }
+                
+                #block input[type=text]{
+                width: 70%;
+                }
+          
 }
+
+@media only screen and (max-width:900px) and (min-width:768px){
+    section{
+        background-color: white;
+        border: 1px solid grey;
+        margin: 100px 35px 0px 60px;
+        width: 70%;
+        height: 500px;
+    }
+    #heading-res{
+        display: none;
+    }
+    h3{
+        font-size: 30px;
+        margin: 30px 10px 0px 10px;
+    }
+   span button{
+        font-weight: 100;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px 3px;
+        margin: 32px 0px 36px 40px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    #heading{
+        display: inline-flex;   
+    }
+   .trip-paris{
+   border-radius: 10px;
+   box-shadow: 2px 5px 3px 4px rgb(207, 206, 206);
+   border: 1px solid red;
+   margin: 20px;
+   padding: 25px 15px 10px;
+   width: 55%;
+   height: 220px; 
+   }
+   .trip-paris a{
+   color: red;
+   font-family: Arial Narrow, sans-serif;
+   text-decoration: none;
+   font-size: 20px;
+   margin-left: 15px;
+   }
+   .trip-paris hr{
+   width: 70%;
+   float: right;
+   right: 0px;
+   }
+   .trip-paris del{
+   color: red;
+   margin-left: 12px;
+   font-size: 20px; 
+   }
+   #block{
+    width: 40%;
+    height: 180px;
+    z-index: 1;
+    top: 30%;
+    margin: 30px;
+    position: absolute;
+    border: 0.5px solid red;
+    right: 25%;
+    display: inline-block;
+    background-color: white;
+    }
+    
+    #block input[type=text]{
+    width: 70%;
+    }
+   }
