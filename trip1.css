@@ -1,0 +1,127 @@
+body{
+    background-color: ghostwhite;
+}
+ .container1{
+     background-color: white;
+     border: 1px solid grey;
+     margin: 150px 350px 0px 580px;
+     width: 20%;
+     height: 450px;
+ }
+ h3{
+     font-size: 30px;
+     margin: 30px 10px 0px 10px;
+ }
+span button{
+     font-weight: 100;
+     border: none;
+     font-size: 20px;
+     color: white;
+     padding: 5px 3px;
+     margin: 32px 0px 36px 40px;
+     border-radius: 50%;
+     background-color: red;
+ }
+ #heading{
+     display: inline-flex;   
+ }
+.trip-paris{
+border-radius: 10px;
+box-shadow: 2px 5px 3px 4px rgb(207, 206, 206);
+border: 1px solid red;
+margin: 20px;
+padding: 25px 15px 10px;
+width: 55%;
+height: 250px; 
+}
+.trip-paris a{
+color: red;
+font-family: Arial Narrow, sans-serif;
+text-decoration: none;
+font-size: 20px;
+margin-left: 15px;
+}
+.trip-paris hr{
+width: 70%;
+float: right;
+right: 0px;
+}
+.trip-paris del{
+color: red;
+margin-left: 12px;
+font-size: 20px; 
+}
+#button{
+text-decoration: none;
+background-color: rgb(241, 9, 9);
+color: white;
+border-radius: 80%;
+padding: 4px 6px;
+font-size: 25px; 
+right: 51%;
+bottom: 30%;
+position: absolute;
+}
+
+@media screen and (min-width: 375px) and (max-width: 667px){
+    .container1{
+        background-color: white;
+        border: 1px solid grey;
+        margin: 80px 50px 10px 50px;
+        width: 70%;
+        height: 450px;
+    }
+    h3{
+        font-size: 28px;
+        margin: 20px 10px 0px 15px;
+    } 
+    span button{
+        font-weight: 100;
+        border: none;
+        font-size: 20px;
+        color: white;
+        padding: 5px 3px;
+        margin: 20px 0px 0px 20px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    .trip-paris{
+        border-radius: 10px;
+        box-shadow: 2px 5px 3px 4px rgb(207, 206, 206);
+        border: 1px solid red;
+        margin-top: 40px;
+        width: 60%;
+        height: 250px; 
+        }
+        .trip-paris a{
+            color: red;
+            font-family: Arial Narrow, sans-serif;
+            text-decoration: none;
+            font-size: 25px;   
+            /* position: static; */
+            padding: 2px;
+        }
+            .trip-paris hr{
+            width: 70%;
+            float: right;
+            /* position: relative; */
+            }
+            .trip-paris del{
+            color: red;
+            margin-top: 40px;
+            font-size: 20px; 
+            }   
+            #button{
+                text-decoration: none;
+                background-color: rgb(241, 9, 9);
+                color: white;
+                border-radius: 80%;
+                padding: 2px 3px;
+                font-size: 15px; 
+                left: 30%;
+                top: 30%;
+                /* top: 10vw; */
+                cursor: pointer;
+                position: relative;
+            }
+}
